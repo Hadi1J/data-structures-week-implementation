@@ -2,8 +2,9 @@
 ## overview
 This repository contains implementations of fundamental data structures as part of the OppoTrain One-Week Intensive Training Program.
 ## Description of Each Data Structure
-
 ### Dynamic Array
+
+The dynamic array can grow & shrink in size.
 
 ### Singly Linked List
 
@@ -14,11 +15,27 @@ This repository contains implementations of fundamental data structures as part 
 
 ### Dynamic Array
 
+| Method       | Time Complexity  | Space Complexity |
+|--------------|------------------|------------------|
+| add()        | O(1)Am/worst O(n)| O(n)             |
+| get()        | O(1)             | O(1)             |
+| set()        | O(1)             | O(1)             |
+| removeAt()   | O(n)             | O(1)             |
+| remove()     | O(n)             | O(1)             |
+| indexOf()    | O(n)             | O(1)             |
+
+
+
+
+
+
 ### Singly Linked List
 
 ### Stack (Array & Linked List Implementation)
 
 ## Usage Examples
+
+* Holding items in a shooping cart. 
 
 ### Dynamic Array
 
