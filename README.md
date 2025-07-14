@@ -35,9 +35,10 @@ The dynamic array can grow & shrink in size.
 
 ## Usage Examples
 
-* Holding items in a shooping cart. 
 
 ### Dynamic Array
+
+Holding items in a shooping cart. 
 
 ### Singly Linked List
 
