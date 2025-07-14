@@ -1,0 +1,20 @@
+{
+  "name": "data-structures-week-implementation",
+  "version": "1.0.0",
+  "description": "This repository contains implementations of fundamental data structures as part of the OppoTrain One-Week Intensive Training Program. ## Description of Each Data Structure",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hadi1J/data-structures-week-implementation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hadi1J/data-structures-week-implementation/issues"
+  },
+  "homepage": "https://github.com/Hadi1J/data-structures-week-implementation#readme"
+}
