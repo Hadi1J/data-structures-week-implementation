@@ -11,19 +11,21 @@ sequential list of nodes that hold data which point to other nodes also containi
 
 ### Stack (Array & Linked List Implementation)
 
+First-in Last-out linear Data Structure.
+
 
 ## Time/Space Complexity Analysis
 
 ### Dynamic Array
 
-| Method       | Time Complexity  | Space Complexity |
-|--------------|------------------|------------------|
-| add()        | O(1)Am/worst O(n)| O(n)             |
-| get()        | O(1)             | O(1)             |
-| set()        | O(1)             | O(1)             |
-| removeAt()   | O(n)             | O(1)             |
-| remove()     | O(n)             | O(1)             |
-| indexOf()    | O(n)             | O(1)             |
+| Method       | Time Complexity    | Space Complexity |
+|--------------|--------------------|------------------|
+| add()        | O(1)Am/worst O(n)  | O(n)             |
+| get()        | O(1)               | O(1)             |
+| set()        | O(1)               | O(1)             |
+| removeAt()   | O(n)               | O(1)             |
+| remove()     | O(n)               | O(1)             |
+| indexOf()    | O(n)               | O(1)             |
 
 
 
@@ -41,6 +43,15 @@ sequential list of nodes that hold data which point to other nodes also containi
 
 ### Stack (Array & Linked List Implementation)
 
+| Method    | Array Time    | Linked List Time   | Space Complexity   |
+|-----------|---------------|--------------------|--------------------|
+| push()    | O(1)          | O(1)               | O(n)               |
+| pop()     | O(1)          | O(1)               | O(n)               |
+| peek()    | O(1)          | O(1)               | O(n)               |
+| search()  | O(n)          | O(1)               | O(n)               |
+| size()    | O(1)          | O(1)               | O(n)               |
+
+
 ## Usage Example
 
 
@@ -53,6 +64,7 @@ Holding items in a shooping cart.
 Streaming 
 
 ### Stack (Array & Linked List Implementation)
+UI Navigation in video Games.
 
 
 ## How to Run Tests
