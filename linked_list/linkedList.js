@@ -123,4 +123,4 @@ customlist.removeAt(2);
 
 customlist.print();
 
-console.log("size of the list : "+customlist.size());
+console.log("size of the list is : "+customlist.size());
