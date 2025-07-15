@@ -13,6 +13,10 @@ sequential list of nodes that hold data which point to other nodes also containi
 
 First-in Last-out linear Data Structure.
 
+### Doubly Linked List
+
+Sequential list of nodes that hold data and contain pointers to both the next node and the previous node in the sequence.
+
 
 ## Time/Space Complexity Analysis
 
@@ -33,11 +37,11 @@ First-in Last-out linear Data Structure.
 
 
 ### Singly Linked List
-| Method       | Time Complexity  | Space Complexity |
-|--------------|------------------|------------------|
-| get()        | O(n)             | O(n)             |
-| addfirst()   | O(1)             | O(1)             |
-| addAtEnd     | O(1)             | O(1)             |
+| Method     | Time Complexity  | Space Complexity |
+|------------|------------------|------------------|
+| search()   | O(n)             | O(n)             |
+| addFirst() | O(1)             | O(1)             |
+| addAtEnd   | O(1)             | O(1)             |
 
 
 
@@ -52,6 +56,14 @@ First-in Last-out linear Data Structure.
 | size()    | O(1)          | O(1)               | O(n)               |
 
 
+### Doubly Linked List 
+
+| Method      | Time Complexity        | Space Complexity |
+|-------------|------------------------|------------------|
+| search()    | O(n)                   | O(n)             |
+| addFirst()  | O(1)                   | O(1)             |
+| addAtEnd()  | O(1) tail O(n) no-tail | O(1)             |
+
 ## Usage Example
 
 
@@ -62,7 +74,9 @@ Holding items in a shooping cart.
 ### Singly Linked List
 
 Streaming 
+### Doubly Linked List 
 
+Undo & Redo in drawing apps or code editors
 ### Stack (Array & Linked List Implementation)
 UI Navigation in video Games.
 
