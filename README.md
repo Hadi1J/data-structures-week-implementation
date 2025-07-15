@@ -7,6 +7,7 @@ This repository contains implementations of fundamental data structures as part 
 The dynamic array can grow & shrink in size.
 
 ### Singly Linked List
+sequential list of nodes that hold data which point to other nodes also containing data.
 
 ### Stack (Array & Linked List Implementation)
 
@@ -30,10 +31,17 @@ The dynamic array can grow & shrink in size.
 
 
 ### Singly Linked List
+| Method       | Time Complexity  | Space Complexity |
+|--------------|------------------|------------------|
+| get()        | O(n)             | O(n)             |
+| addfirst()   | O(1)             | O(1)             |
+| addAtEnd     | O(1)             | O(1)             |
+
+
 
 ### Stack (Array & Linked List Implementation)
 
-## Usage Examples
+## Usage Example
 
 
 ### Dynamic Array
@@ -41,6 +49,8 @@ The dynamic array can grow & shrink in size.
 Holding items in a shooping cart. 
 
 ### Singly Linked List
+
+Streaming 
 
 ### Stack (Array & Linked List Implementation)
 
