@@ -21,7 +21,9 @@ Sequential list of nodes that hold data and contain pointers to both the next no
 
 Sequential list of nodes that hold data, where each node points to the next node, and the last node points back to the first node, forming a continuous loop.
 
+### Queue 
 
+A queue is a linear data structure which models real world queues by having two primary operations, namely enqueue and dequeue.
 ## Time/Space Complexity Analysis
 
 ### Dynamic Array
@@ -77,6 +79,19 @@ Sequential list of nodes that hold data, where each node points to the next node
 | search()   | O(n)            | O(n)             |
 | addFirst() | O(1)            | O(1)             |
 | addAtEnd() | O(1)            | O(1)             |
+
+
+### Queue
+
+| Method   | Time Complexity | Space Complexity |
+|----------|-----------------|------------------|
+| Enqueue  | O(1)            | O(1)             |
+| Dequeue  | O(1)            | O(1)             |
+| Peek     | O(1)            | O(1)             |
+| Contains | O(n)            | O(n)             |
+| Removal  | O(n)            | O(n)             |
+| Is Empty | O(1)            | O(1)             |
+
 ## Usage Example
 
 
@@ -98,5 +113,7 @@ Buffering audio/video streams in a loop.
 ### Stack (Array & Linked List Implementation)
 UI Navigation in video Games.
 
+### Queue
 
+Processing messages in a messaging app or email server.
 ## How to Run Tests
