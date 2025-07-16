@@ -24,6 +24,11 @@ Sequential list of nodes that hold data, where each node points to the next node
 ### Queue 
 
 A queue is a linear data structure which models real world queues by having two primary operations, namely enqueue and dequeue.
+
+### Binary Tree 
+
+tree data structure where each node has at most two children left and right child
+
 ## Time/Space Complexity Analysis
 
 ### Dynamic Array
