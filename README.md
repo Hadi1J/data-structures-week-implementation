@@ -17,6 +17,10 @@ First-in Last-out linear Data Structure.
 
 Sequential list of nodes that hold data and contain pointers to both the next node and the previous node in the sequence.
 
+### Circular Linked List
+
+Sequential list of nodes that hold data, where each node points to the next node, and the last node points back to the first node, forming a continuous loop.
+
 
 ## Time/Space Complexity Analysis
 
@@ -64,6 +68,15 @@ Sequential list of nodes that hold data and contain pointers to both the next no
 | addFirst()  | O(1)                   | O(1)             |
 | addAtEnd()  | O(1) tail O(n) no-tail | O(1)             |
 
+
+### Circular Linked List
+
+
+| Method     | Time Complexity | Space Complexity |
+|------------|-----------------|------------------|
+| search()   | O(n)            | O(n)             |
+| addFirst() | O(1)            | O(1)             |
+| addAtEnd() | O(1)            | O(1)             |
 ## Usage Example
 
 
@@ -77,6 +90,11 @@ Streaming
 ### Doubly Linked List 
 
 Undo & Redo in drawing apps or code editors
+
+### Circular Linked List
+
+Buffering audio/video streams in a loop.
+
 ### Stack (Array & Linked List Implementation)
 UI Navigation in video Games.
 
