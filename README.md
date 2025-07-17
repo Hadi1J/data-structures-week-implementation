@@ -32,6 +32,15 @@ A binary search tree (BST) is a tree where each node has up to two children, wit
 ### Tree Traversal Algorithms
 Tree traversal algorithms are methods to visit all nodes in a binary tree in specific orders. These include inorder (left-root-right), preorder (root-left-right), postorder (left-right-root), and level-order (visiting nodes level by level), useful for processing or analyzing tree data.
 
+### Hash Table
+A hash table stores key-value pairs using a hash function to map keys to array indices. Collisions are handled with linked lists (chaining), enabling fast insertion and lookup.
+
+### Min Heap
+A min heap is a complete binary tree where each node’s value is less than or equal to its children’s values, stored as an array. It ensures the smallest value is always at the top.
+
+### Basic Graph (Adjacency List)
+A graph is a set of vertices connected by edges, represented as a mapping of each vertex to a list of its neighbors. It models relationships like networks or connections.
+
 ## Time/Space Complexity Analysis
 
 ### Dynamic Array
@@ -94,13 +103,38 @@ Tree traversal algorithms are methods to visit all nodes in a binary tree in spe
 
 
 ### Tree Traversal Algorithms
-| Method                | Time Complexity  | Space Complexity |
-|-----------------------|------------------|------------------|
-| inorderTraversal()    | O(n)             | O(h)             |
-| preorderTraversal()   | O(n)             | O(h)             |
-| postorderTraversal()  | O(n)             | O(h)             |
-| levelOrderTraversal() | O(n)             | O(w)             |
-| searchNodeInorder()   | O(n)             | O(h)             |
+| Method                | Time Complexity | Space Complexity |
+|-----------------------|-----------------|------------------|
+| inorderTraversal()    | O(n)            | O(h)             |
+| preorderTraversal()   | O(n)            | O(h)             |
+| postorderTraversal()  | O(n)            | O(h)             |
+| levelOrderTraversal() | O(n)            | O(w)             |
+| searchNodeInorder()   | O(n)            | O(h)             |
+| getNodesCount()       | O(1)            | O(1)             |
+
+
+### Hash Table
+| Method          | Time Complexity         | Space Complexity |
+|-----------------|-------------------------|------------------|
+| addValue()      | O(1) avg, O(n) worst    | O(1)             |
+| search()        | O(1) avg, O(n) worst    | O(1)             |
+| getNodesCount() | O(1)                    | O(1)             |
+
+
+### Min Heap
+| Method          | Time Complexity | Space Complexity |
+|-----------------|-----------------|------------------|
+| addValue()      | O(log n)        | O(1)             |
+| search()        | O(n)            | O(1)             |
+| getNodesCount() | O(1)            | O(1)             |
+
+
+### Basic Graph (Adjacency List)
+| Method          | Time Complexity    | Space Complexity |
+|-----------------|--------------------|------------------|
+| addValue()      | O(1)               | O(1)             |
+| search()        | O(V + E)           | O(V)             |
+| getNodesCount() | O(1)               | O(1)             |
 
 
 ## Usage Example
@@ -131,5 +165,14 @@ Autocomplete features in search bars.
 
 ### Tree Traversal Algorithms
 Generating a sorted list of contacts from a BST or evaluating mathematical expressions stored in a tree.
+
+### Hash Table
+Storing user profiles in a social media app, where usernames map to user data for fast retrieval.
+
+### Min Heap
+Managing tasks in a to-do app, where the highest-priority task (smallest value) is always at the top.
+
+### Basic Graph (Adjacency List)
+Modeling a social network, where users are vertices and friendships are edges, for finding connections.
 
 ## How to Run Tests
