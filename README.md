@@ -41,6 +41,15 @@ A min heap is a complete binary tree where each node’s value is less than or e
 ### Basic Graph (Adjacency List)
 A graph is a set of vertices connected by edges, represented as a mapping of each vertex to a list of its neighbors. It models relationships like networks or connections.
 
+### Trie
+A trie (prefix tree) is a tree where each node represents a character, and paths from root to leaf form words. It’s used for efficient word or prefix lookup.
+
+### Union-Find (Disjoint Set)
+A union-find (disjoint set) tracks elements in separate sets, allowing quick merging of sets and checking if elements are in the same set. It’s used for grouping related items.
+
+### Graph Traversal (BFS/DFS)
+Graph traversal algorithms visit all vertices in a graph using Breadth-First Search (BFS, level by level) or Depth-First Search (DFS, exploring as far as possible along each branch). They are used to explore or analyze graph structures.
+
 ## Time/Space Complexity Analysis
 
 ### Dynamic Array
@@ -58,16 +67,16 @@ A graph is a set of vertices connected by edges, represented as a mapping of eac
 |------------|------------------|------------------|
 | search()   | O(n)             | O(n)             |
 | addFirst() | O(1)             | O(1)             |
-| addAtEnd   | O(1)             | O(1)             |
+| addAtEnd() | O(1)             | O(1)             |
 
 ### Stack (Array & Linked List Implementation)
-| Method    | Array Time    | Linked List Time   | Space Complexity   |
-|-----------|---------------|--------------------|--------------------|
-| push()    | O(1)          | O(1)               | O(n)               |
-| pop()     | O(1)          | O(1)               | O(n)               |
-| peek()    | O(1)          | O(1)               | O(n)               |
-| search()  | O(n)          | O(1)               | O(n)               |
-| size()    | O(1)          | O(1)               | O(n)               |
+| Method    | Array Time    | Linked List Time | Space Complexity |
+|-----------|---------------|------------------|------------------|
+| push()    | O(1)          | O(1)             | O(n)             |
+| pop()     | O(1)          | O(1)             | O(n)             |
+| peek()    | O(1)          | O(1)             | O(n)             |
+| search()  | O(n)          | O(1)             | O(n)             |
+| size()    | O(1)          | O(1)             | O(n)             |
 
 ### Doubly Linked List
 | Method      | Time Complexity        | Space Complexity |
@@ -91,7 +100,7 @@ A graph is a set of vertices connected by edges, represented as a mapping of eac
 | Peek     | O(1)            | O(1)             |
 | Contains | O(n)            | O(n)             |
 | Removal  | O(n)            | O(n)             |
-| Is Empty | O(1)            | O(1)             |
+
 
 ### Binary Search Tree
 | Method             | Time Complexity | Space Complexity |
@@ -137,6 +146,32 @@ A graph is a set of vertices connected by edges, represented as a mapping of eac
 | getNodesCount() | O(1)               | O(1)             |
 
 
+### Trie
+| Method          | Time Complexity | Space Complexity |
+|-----------------|-----------------|------------------|
+| addValue()      | O(m)            | O(m)             |
+| search()        | O(m)            | O(1)             |
+| getNodesCount() | O(1)            | O(1)             |
+
+
+### Union-Find (Disjoint Set)
+| Method          | Time Complexity         | Space Complexity |
+|-----------------|-------------------------|------------------|
+| addValue()      | O(1)                    | O(1)             |
+| find()          | O(α(n)) avg             | O(1)             |
+| union()         | O(α(n)) avg             | O(1)             |
+| search()        | O(1)                    | O(1)             |
+| getNodesCount() | O(1)                    | O(1)             |
+
+### Graph Traversal (BFS/DFS)
+| Method          | Time Complexity    | Space Complexity |
+|-----------------|--------------------|------------------|
+| addValue()      | O(1)               | O(1)             |
+| bfsTraversal()  | O(V + E)           | O(V)             |
+| dfsTraversal()  | O(V + E)           | O(V)             |
+| search()        | O(V + E)           | O(V)             |
+| getNodesCount() | O(1)               | O(1)             |
+
 ## Usage Example
 
 ### Dynamic Array
@@ -175,4 +210,14 @@ Managing tasks in a to-do app, where the highest-priority task (smallest value) 
 ### Basic Graph (Adjacency List)
 Modeling a social network, where users are vertices and friendships are edges, for finding connections.
 
+### Trie
+Suggesting words in a text editor or search engine, where prefixes lead to valid word completions.
+
+### Union-Find (Disjoint Set)
+Grouping users in a social network into friend circles or detecting connected components in a graph.
+
+### Graph Traversal (BFS/DFS)
+Exploring a social network to find friends within a certain degree of separation or analyzing website link structures.
+
 ## How to Run Tests
+[Existing content unchanged]
