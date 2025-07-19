@@ -4,11 +4,13 @@ class Queue {
         this.length = 0;
     }
 
+    // Add element to the rear of queue (FIFO)
     enqueue(element) {
         this.elements[this.length] = element;
         this.length++;
     }
 
+    // Remove and return element from front of queue
     dequeue() {
         if (this.length === 0) {
             console.log("the queue is empty");
@@ -17,7 +19,7 @@ class Queue {
 
         const dequeuedElement = this.elements[0];
 
-
+        // Shift all elements left to fill the gap
         for (let i = 0; i < this.length - 1; i++) {
             this.elements[i] = this.elements[i + 1];
         }
@@ -26,6 +28,7 @@ class Queue {
         return dequeuedElement;
     }
 
+    // Look at front element without removing it
     peek() {
         if (this.length === 0) {
             console.log("the queue is empty");
@@ -34,6 +37,7 @@ class Queue {
         return this.elements[0];
     }
 
+    // Search for element in the queue
     contains(element) {
         if (this.length === 0) {
             console.log("the queue is empty");
@@ -48,6 +52,7 @@ class Queue {
         return false;
     }
 
+    // Remove specific element from anywhere in queue
     removal(element) {
         if (this.length === 0) {
             console.log("the queue is empty");
@@ -57,13 +62,13 @@ class Queue {
         let found = false;
         for (let i = 0; i < this.length; i++) {
             if (this.elements[i] === element) {
-
+                // Shift elements left to close the gap
                 for (let j = i; j < this.length - 1; j++) {
                     this.elements[j] = this.elements[j + 1];
                 }
                 this.length--;
                 found = true;
-                break;
+                break; // Remove only first occurrence
             }
         }
 
@@ -81,6 +86,7 @@ class Queue {
         return this.length;
     }
 
+    // Visual representation showing queue direction
     print() {
         if (this.length === 0) {
             console.log("the queue is empty");
@@ -95,26 +101,28 @@ class Queue {
     }
 }
 
+// Build queue and test FIFO operations
 let queue = new Queue();
 
+// Adding elements to rear: 10, 20, 30, 40, 50
 queue.enqueue(10);
 queue.enqueue(20);
 queue.enqueue(30);
 queue.enqueue(40);
 queue.enqueue(50);
 
-console.log("Dequeued element: " + queue.dequeue());
+console.log("Dequeued element: " + queue.dequeue()); // Should remove 10 from front
 
-console.log("Peek: " + queue.peek());
+console.log("Peek: " + queue.peek()); // Should show 20 (new front)
 
-console.log("Contains 30: " + queue.contains(30));
-console.log("Contains 100: " + queue.contains(100));
+console.log("Contains 30: " + queue.contains(30)); // Should find it
+console.log("Contains 100: " + queue.contains(100)); // Should not find it
 
-console.log("Remove 30: " + queue.removal(30));
-console.log("Remove 100: " + queue.removal(100));
+console.log("Remove 30: " + queue.removal(30)); // Should remove from middle
+console.log("Remove 100: " + queue.removal(100)); // Should not find it
 
 console.log("Is empty: " + queue.isEmpty());
 
-queue.print();
+queue.print(); // Shows current queue state
 
 console.log("Size: " + queue.size());

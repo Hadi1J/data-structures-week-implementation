@@ -19,11 +19,11 @@ class CircularLinkedList {
         if(!this.head){
             this.head = newNode;
             this.tail = newNode;
-            newNode.next = newNode;
+            newNode.next = newNode; // Points to itself - creates the circle
         }else {
             newNode.next = this.head;
             this.head = newNode;
-            this.tail.next = this.head;
+            this.tail.next = this.head; // Maintain the circle
         }
         this.length++;
     }
@@ -34,9 +34,9 @@ class CircularLinkedList {
         if(!this.head){
             this.head = newNode;
             this.tail = newNode;
-            newNode.next = newNode;
+            newNode.next = newNode; // Points to itself - creates the circle
         }else {
-            newNode.next = this.head;
+            newNode.next = this.head; // New tail points back to head
             this.tail.next = newNode;
             this.tail = newNode;
         }
@@ -52,6 +52,7 @@ class CircularLinkedList {
         let current = this.head;
         let index = 0;
 
+        // Loop until we come back to head - avoids infinite loop
         while (true) {
             if (current.value == value) return index;
             current = current.next;
@@ -71,6 +72,7 @@ class CircularLinkedList {
         let current = this.head;
         let result = '';
 
+        // Traverse once around the circle
         while (true) {
             result += current.value + ' -> ';
             current = current.next;
@@ -83,13 +85,9 @@ class CircularLinkedList {
     size(){
         return this.length;
     }
-
-    size(){
-        return this.length;
-    }
-
 }
 
+// Build and test the circular list
 let customlist = new CircularLinkedList();
 
 customlist.addAtEnd(10);
@@ -100,9 +98,9 @@ customlist.addAtEnd(50);
 
 customlist.addFirst(99);
 
-console.log("the index for the value is : " + customlist.search(30));
-console.log("the index for the value is : " + customlist.search(100));
+console.log("The index for the value is: " + customlist.search(30));
+console.log("The index for the value is: " + customlist.search(100));
 
 customlist.print();
 
-console.log("the size of the list is : " + customlist.size());
+console.log("The size of the list is: " + customlist.size());

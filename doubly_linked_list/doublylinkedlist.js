@@ -2,7 +2,7 @@ class Node {
     constructor(value) {
         this.value = value;
         this.next = null;
-        this.prev = null;
+        this.prev = null;  // The magic - backward connection
     }
 }
 
@@ -22,7 +22,7 @@ class DoublyLinkedList {
             this.tail = newNode;
         }else {
             newNode.next = this.head;
-            this.head.prev = newNode;
+            this.head.prev = newNode;  // Connect backward
             this.head = newNode;
         }
         this.length++;
@@ -35,7 +35,7 @@ class DoublyLinkedList {
             this.head = newNode;
             this.tail = newNode;
         }else {
-            newNode.prev = this.tail;
+            newNode.prev = this.tail;  // Connect backward
             this.tail.next = newNode;
             this.tail = newNode;
         }
@@ -62,7 +62,7 @@ class DoublyLinkedList {
         let current = this.head;
         let result = '';
         while (current) {
-            result += current.value + ' <- ->';
+            result += current.value + ' <-> ';
             current = current.next;
         }
         console.log(result + 'null');
@@ -71,9 +71,9 @@ class DoublyLinkedList {
     size(){
         return this.length;
     }
-
 }
 
+// Build and test the doubly linked list
 let customlist = new DoublyLinkedList();
 
 customlist.addAtEnd(10);
@@ -84,9 +84,9 @@ customlist.addAtEnd(50);
 
 customlist.addFirst(99);
 
-console.log("searching for value 30: " + customlist.search(30));
-console.log("searching for value 100: " + customlist.search(100));
+console.log("Searching for value 30: " + customlist.search(30));
+console.log("Searching for value 100: " + customlist.search(100));
 
 customlist.print();
 
-console.log("size of the list is : " + customlist.size());
+console.log("Size of the list is: " + customlist.size());
